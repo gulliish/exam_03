@@ -1,13 +1,13 @@
 :root{
     --main-text-color: #FFFFFF;
-    --main-bg-colorL: #272A2F;
+    --main-bg-color: #272A2F;
     --primary-bg-color: #19849B;
     --footer-bg-color: #16758A;
     --title-font-size: 30px;
     --title-line-height: 34px;
     --subtitle-fs: 24px;
     --subtitle-lh: 28px;
-    --text-fs: 16px;
+    --text-fs: 15px;
     --text-lh: 18px;
     --letter-spacing: 0.01em;
     --input-bg-color: #324B53;
@@ -27,4 +27,7 @@ ul, ol{
 }
 a{
     text-decoration: none;
+}
+button{
+    cursor: pointer;
 }
