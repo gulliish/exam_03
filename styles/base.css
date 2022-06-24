@@ -1,0 +1,30 @@
+:root{
+    --main-text-color: #FFFFFF;
+    --main-bg-colorL: #272A2F;
+    --primary-bg-color: #19849B;
+    --footer-bg-color: #16758A;
+    --title-font-size: 30px;
+    --title-line-height: 34px;
+    --subtitle-fs: 24px;
+    --subtitle-lh: 28px;
+    --text-fs: 16px;
+    --text-lh: 18px;
+    --letter-spacing: 0.01em;
+    --input-bg-color: #324B53;
+    --input-text-color: #BEA5AC;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
