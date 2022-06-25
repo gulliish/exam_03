@@ -32,3 +32,28 @@ form.addEventListener('submit', function(e){
     console.log(e.target[3].value);
     console.log(e);
 })
+
+const modal = document.getElementById('myModal');
+const images = document.getElementsByClassName('myImages');
+const modalImg = document.getElementById("img01");
+const captionText = document.getElementById("caption");
+
+for (let i = 0; i < images.length; i++) {
+let img = images[i];
+img.onclick = function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+}
+}
+
+let closeBtn = document.getElementsByClassName("close")[0];
+
+closeBtn.onclick = function() {
+    modal.style.display = "none";
+}
+modal.onclick = function() {
+    modal.style.display = "none";
+}
+modalImg.onclick = function() {
+    modal.style.display = "block";
+}
