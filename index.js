@@ -33,19 +33,24 @@ form.addEventListener('submit', function(e){
     console.log(e);
 })
 
+const cards = [
+    
+]
 const modal = document.getElementById('myModal');
-const images = document.getElementsByClassName('myImages');
+const clicked = document.getElementsByClassName('img-wrap');
 const modalImg = document.getElementById("img01");
 const captionText = document.getElementById("caption");
 const closeBg = document.querySelector('#modal-bg')
+const images = document.getElementsByClassName('myImages');
+
 
 for (let i = 0; i < images.length; i++) {
 let img = images[i];
 img.onclick = function() {
     modal.style.display = "block";
     modalImg.src = this.src;
-}
-}
+}}
+
 
 let closeBtn = document.getElementsByClassName("close")[0];
 
