@@ -37,6 +37,7 @@ const modal = document.getElementById('myModal');
 const images = document.getElementsByClassName('myImages');
 const modalImg = document.getElementById("img01");
 const captionText = document.getElementById("caption");
+const closeBg = document.querySelector('#modal-bg')
 
 for (let i = 0; i < images.length; i++) {
 let img = images[i];
@@ -51,7 +52,7 @@ let closeBtn = document.getElementsByClassName("close")[0];
 closeBtn.onclick = function() {
     modal.style.display = "none";
 }
-modal.onclick = function() {
+closeBg.onclick = function() {
     modal.style.display = "none";
 }
 modalImg.onclick = function() {
