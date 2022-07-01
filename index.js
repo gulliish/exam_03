@@ -5,7 +5,6 @@ const modalWindow = document.querySelector('.modal-window_content')
 
 toggleBtn.addEventListener('click',() =>{
     contact.style.display = 'block';
-    contact.style.position = 'fixed';
     window.scroll({top: 0, left: 0});
 })
 window.addEventListener('keydown',function(e) {
@@ -27,15 +26,22 @@ const form = document.querySelector('.form')
 
 form.addEventListener('submit', function(e){
     e.preventDefault();
-    console.log(e.target[0].value);
-    console.log(e.target[1].value);
-    console.log(e.target[3].value);
-    console.log(e);
-})
+    const inputName = e.target[0].value,
+    inputEmail = e.target[1].value,
+    textarea = e.target[2].value;
+    const form = {
+        name: ' ',
+        email: ' ',
+        textarea:' ',
+    }
+    form.name = inputName;
+    form.email = inputEmail;
+    form.textarea = textarea;
+    console.log(form);
 
-const cards = [
-    
-]
+    e.target.reset();
+});
+
 const modal = document.getElementById('myModal');
 const clicked = document.getElementsByClassName('img-wrap');
 const modalImg = document.getElementById("img01");
@@ -63,3 +69,9 @@ closeBg.onclick = function() {
 modalImg.onclick = function() {
     modal.style.display = "block";
 }
+window.addEventListener('keydown',function(e) {
+    if (e.keyCode === 27 ){
+    modal.style.display = "none";
+    window.scroll({top: 500, left: 0});
+    }
+})
